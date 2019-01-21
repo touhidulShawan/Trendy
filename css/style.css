@@ -121,6 +121,8 @@ header #mobile-menu li a {
 
 #main-footer a#social-icon {
   margin: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #main-footer a.facebook:hover {
@@ -137,5 +139,9 @@ header #mobile-menu li a {
 
 #main-footer a.app {
   margin: 10px;
+}
+
+#main-footer .footer-copyright a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

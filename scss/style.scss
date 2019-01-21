@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+$text-font: "Roboto",
+sans-serif;
+$navlink-color: #f4511e;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $text-font;
+}
+
+header {
+    background: url("../img/bg_Image1.jpeg");
+    // background: url("../img/background_image.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 685px;
+    @media only screen and (max-width: 576px) {
+        min-height: 350px;
+    }
+    nav {
+        .nav-wrapper {
+            .brand-logo {
+                span {
+                    background: #f4501ebd;
+                    padding: 5px 6px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: "Pacifico", cursive;
+                }
+            }
+        }
+        ul {
+            li {
+                a {
+                    color: rgba(12, 131, 131, 0.842);
+                    font-family: $text-font;
+                    font-weight: 900;
+                }
+                a.active {
+                    background: $navlink-color;
+                    color: white;
+                }
+            }
+        }
+    }
+    #mobile-menu {
+        background: #263238;
+        li {
+            a {
+                color: #ccff90;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#collections {
+    .card {
+        .card-action {
+            button {
+                text-align: center;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.header-title {
+    position: relative;
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+.header-title::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    border-bottom: 2px solid $navlink-color;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    border-bottom-style: dotted;
+}
+
+#product-title-bg {
+    background: $navlink-color;
+    color: white;
+    padding: 5px;
+}
+
+#contact {
+    .card-content {
+        span {
+            background: tomato;
+            padding: 0px 5px;
+            color: white;
+        }
+    }
+}
+
+#main-footer {
+    background: #ab47bc;
+    h5 {
+        text-transform: uppercase;
+        font-stretch: semi-condensed;
+    }
+    .first-row-content {
+        h5 {
+            color: #e3f2fd;
+        }
+        a {
+            color: #a7ffeb;
+        }
+        a:hover {
+            text-decoration: line-through;
+            color: #ccff90;
+        }
+    }
+    a.payment {
+        // margin-right: 10px;
+        // margin-left: 10px;
+        margin: 10px;
+        background: #e1f5fe;
+        i {
+            color: #01579b;
+        }
+    }
+    a#social-icon {
+        margin: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    a.facebook:hover {
+        background: #3b5999;
+    }
+    a.instagram:hover {
+        background: #e4405f;
+    }
+    a.youtube:hover {
+        background: #cd201f;
+    }
+    a.app {
+        margin: 10px;
+    }
+}

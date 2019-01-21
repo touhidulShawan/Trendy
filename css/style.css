@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: url("../img/bg_Image1.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 685px;
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    min-height: 350px;
+  }
+}
+
+header nav .nav-wrapper .brand-logo span {
+  background: #f4501ebd;
+  padding: 5px 6px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Pacifico", cursive;
+}
+
+header nav ul li a {
+  color: rgba(12, 131, 131, 0.842);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+header nav ul li a.active {
+  background: #f4511e;
+  color: white;
+}
+
+header #mobile-menu {
+  background: #263238;
+}
+
+header #mobile-menu li a {
+  color: #ccff90;
+  font-size: 18px;
+}
+
+#collections .card .card-action button {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.header-title {
+  position: relative;
+}
+
+.header-title h3 {
+  text-transform: uppercase;
+}
+
+.header-title::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  border-bottom: 2px solid #f4511e;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 10px;
+  border-bottom-style: dotted;
+}
+
+#product-title-bg {
+  background: #f4511e;
+  color: white;
+  padding: 5px;
+}
+
+#contact .card-content span {
+  background: tomato;
+  padding: 0px 5px;
+  color: white;
+}
+
+#main-footer {
+  background: #ab47bc;
+}
+
+#main-footer h5 {
+  text-transform: uppercase;
+  font-stretch: semi-condensed;
+}
+
+#main-footer .first-row-content h5 {
+  color: #e3f2fd;
+}
+
+#main-footer .first-row-content a {
+  color: #a7ffeb;
+}
+
+#main-footer .first-row-content a:hover {
+  text-decoration: line-through;
+  color: #ccff90;
+}
+
+#main-footer a.payment {
+  margin: 10px;
+  background: #e1f5fe;
+}
+
+#main-footer a.payment i {
+  color: #01579b;
+}
+
+#main-footer a#social-icon {
+  margin: 10px;
+}
+
+#main-footer a.facebook:hover {
+  background: #3b5999;
+}
+
+#main-footer a.instagram:hover {
+  background: #e4405f;
+}
+
+#main-footer a.youtube:hover {
+  background: #cd201f;
+}
+
+#main-footer a.app {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
